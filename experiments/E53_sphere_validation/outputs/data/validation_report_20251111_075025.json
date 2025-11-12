@@ -1,0 +1,145 @@
+{
+  "parameters": {
+    "R": 10.0,
+    "alpha": 0.5,
+    "l_max": 20
+  },
+  "regime_analysis": {
+    "R": 10.0,
+    "l_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "curvature_params": [
+      0.0,
+      0.02,
+      0.06,
+      0.12,
+      0.2,
+      0.3,
+      0.42,
+      0.56,
+      0.72,
+      0.9,
+      1.1,
+      1.32,
+      1.56,
+      1.82,
+      2.1,
+      2.4,
+      2.72,
+      3.06,
+      3.42,
+      3.8,
+      4.2
+    ],
+    "regimes": {
+      "weak": {
+        "l_values": [
+          0,
+          1,
+          2
+        ],
+        "count": 3,
+        "fraction": 0.14285714285714285,
+        "kappa_range": [
+          0.0,
+          0.06
+        ]
+      },
+      "intermediate": {
+        "l_values": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "count": 7,
+        "fraction": 0.3333333333333333,
+        "kappa_range": [
+          0.12,
+          0.9
+        ]
+      },
+      "strong": {
+        "l_values": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "count": 11,
+        "fraction": 0.5238095238095238,
+        "kappa_range": [
+          1.1,
+          4.2
+        ]
+      }
+    },
+    "transition_l": {
+      "weak_to_intermediate": 3,
+      "intermediate_to_strong": 10
+    }
+  },
+  "error_validation": {
+    "theory_satisfied": true,
+    "tolerance": 0.01,
+    "weak_regime": {
+      "l_values": [
+        0,
+        1,
+        2
+      ],
+      "errors": [
+        0.0,
+        0.002946278254944016,
+        0.005103103630798292
+      ],
+      "max_error": 0.005103103630798292,
+      "mean_error": 0.0026831272952474363,
+      "violations": {
+        "count": 0,
+        "l_values": [],
+        "errors": []
+      }
+    },
+    "intermediate_regime": {
+      "max_error": 0.01976423537605242,
+      "mean_error": 0.013496914574966814
+    },
+    "strong_regime": {
+      "max_error": 0.04269562819149828,
+      "mean_error": 0.03227410376577199
+    }
+  },
+  "convergence_analysis": {
+    "convergence_detected": 

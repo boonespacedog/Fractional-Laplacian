@@ -6,7 +6,7 @@
 **Computational verification code for**: "Fractional Laplacian on Curved Manifolds: Coordinate-Invariant Construction and Physical Applications"
 
 **Author**: Oksana Sudoma
-**Status**: Publication-ready
+**Date**: 15 November, 2025
 
 ---
 
@@ -51,19 +51,25 @@ python3 main.py
 ```
 Fractional-Laplacian/
 ├── experiments/
-│   └── E53_sphere_validation/
-│       ├── src/                 # Core implementation
-│       ├── tests/               # Unit tests
-│       ├── outputs/             # Results and analytical report
-│       ├── main.py              # Entry point
-│       └── requirements.txt
+│   └── E53_sphere_validation/           # Sphere curvature validation
+│       ├── src/                         # Core implementation modules
+│       ├── tests/                       # Unit tests
+│       ├── outputs/
+│       │   ├── EXPERIMENTAL_REPORT_E53.md    # Results (execution day)
+│       │   ├── ANALYTICAL_REPORT_E53.md      # Analysis (next day)
+│       │   └── data/                         # Validated numerical results
+│       ├── ARCHITECTURE.md              # Implementation architecture
+│       ├── README.md                    # Experiment pre-registration
+│       ├── main.py                      # Entry point
+│       └── requirements.txt             # Dependencies
 ├── paper/
-│   ├── fractional_laplacian_curved_v6.tex
-│   └── fractional_laplacian_curved_v6.pdf
+│   └── Sudoma_O_Nov2025_fractional_laplacian.pdf  # Latest version
 ├── LICENSE
-├── README.md
+├── README.md                            # This file
 └── .gitignore
 ```
+
+**Note**: E53 README contains pre-registration (hypothesis, parameters). EXPERIMENTAL_REPORT shows execution results. ANALYTICAL_REPORT provides interpretation and validation.
 
 ---
 
@@ -104,7 +110,7 @@ All numerical results match paper claims to stated precision.
 ```bibtex
 @misc{sudoma2025fractional,
   author = {Sudoma, Oksana},
-  title = {Fractional Laplacian on Curved Manifolds: Coordinate-Invariant Construction and Physical Applications},
+  title = {Fractional Laplacians on Curved Manifolds: Spectral Definition, Curvature Corrections, and Anomalous Diffusion},
   year = {2025},
   doi = {10.5281/zenodo.17585575},
   url = {https://github.com/boonespacedog/Fractional-Laplacian}
@@ -131,7 +137,7 @@ Computational validation and mathematical formalism assisted by Claude (Anthropi
 
 - **Repository**: https://github.com/boonespacedog/Fractional-Laplacian
 - **Zenodo Archive**: https://doi.org/10.5281/zenodo.17585575
-- **Paper**: See `paper/` directory for latest version (v6)
+- **Paper**: See `paper/` directory for latest version (v7)
 
 ---
 
